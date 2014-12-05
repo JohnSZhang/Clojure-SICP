@@ -219,6 +219,9 @@ y))
 ;Clojure
 (def sqrt
   (fn[x]
+    (def square
+      (fn[x]
+        (* x x)))
     (def abs
       (fn[x]
         (if (< x 0)
